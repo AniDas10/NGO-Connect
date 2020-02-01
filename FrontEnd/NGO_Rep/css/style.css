@@ -216,6 +216,10 @@ h2 {
   .logo:hover::before {
     border-color: black;
   }
+  
+  .logo {
+    border: none;
+  }
 
 .clear {
   clear: both; }
