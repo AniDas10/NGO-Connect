@@ -174,7 +174,7 @@ input:-webkit-autofill {
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: 80vh; }
 
 figure {
   margin: 0; }
@@ -231,7 +231,8 @@ body {
   padding: 50px 0; }
 
 .main {
-  position: relative; }
+  position: relative;   
+}
 
 .container {
   width: 1400px;
@@ -249,8 +250,8 @@ body {
 
 .signup-img-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 66%;
+  left: 40%;
   transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
