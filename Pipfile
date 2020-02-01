@@ -6,14 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "*"
-pandas = "*"
-numpy = "*"
-psycopg2 = "*"
-psycopg2-binary = "*"
-pillow = "*"
-sklearn = "*"
-rake-nltk = "*"
+bs4 = "*"
+requests = "*"
 
 [requires]
 python_version = "3.6"

@@ -1,7 +1,5 @@
 from django.db import models
 
-class City(models.Model):
-    name = models.CharField(max_length=120)
 
 class NGO(models.Model):
     CATEGORIES = [
@@ -15,12 +13,15 @@ class NGO(models.Model):
 
     name = models.CharField(max_length=250)
     cause = models.TextField()
-    cities = models.ManyToManyField(City)
+    cities = models.TextField()
     description = models.TextField()
     website_link = models.URLField(max_length=520)
     logo = models.ImageField(upload_to='NGOs/Logos')
     categories = models.CharField(max_length=100, choices=CATEGORIES)
-    email = models.EmailField()
+    email = models.EmailField(default='ngoxyz@gmail.com')
+
+    def __str__(self):
+        return self.name
 
 
 class Blog(models.Model):

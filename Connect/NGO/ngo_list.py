@@ -58,7 +58,8 @@ def get_df():
     df = dff.transpose()
     df.columns = ['Name', 'Link', 'Cause', 'City', 'Details']
     dic = {}
-    dic = df.to_dict()
-    return df
+    dic = df.to_dict('index')
+    dic = [v for k, v in dic.items()]
+    return dic
 
-#get_df()
+print(get_df())

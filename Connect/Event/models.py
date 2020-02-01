@@ -11,7 +11,7 @@ class Event(models.Model):
     event_poster = models.ImageField(upload_to='Events/Posters')
     tagline = models.CharField(max_length=540)
     sentiment = models.IntegerField(default=0)
-    ngo = models.OneToOneField(NGO)
+    ngo = models.OneToOneField(NGO, on_delete=models.CASCADE)
     expected_footfall = models.BigIntegerField()
     price = models.IntegerField(default=0)
     location = models.TextField()
