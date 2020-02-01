@@ -6,5 +6,5 @@ from NGO import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('populate_once/', views.populate_once),
+    path('show/<str:title>', views.recommend_ngo)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
