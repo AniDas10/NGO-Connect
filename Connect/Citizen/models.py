@@ -16,3 +16,4 @@ class Citizen(models.Model):
     follows = models.ManyToManyField(NGO)
     points = models.IntegerField(default=10)
     city = models.CharField(max_length=240)
+    email = models.EmailField()
