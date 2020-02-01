@@ -1,0 +1,595 @@
+{% extends 'partials/_navbar.html' %}
+{% load static %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>ZeroTear NGO</title>
+
+  Bootstrap core CSS
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  Custom fonts for this template
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+  Custom styles for this template
+  <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+  <link href="{% static 'css/css-circular-prog-bar.css' %}" rel="stylesheet">
+
+</head> -->
+
+{% block content %}
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 1.4em;"><i class="fas fa-heartbeat fa-1x"></i> ZeroTear NGO</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Donation Stats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Our Journey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Mentors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'login' %}"><i class="fas fa-users-cog" style="font-size: 1.4rem; margin-top:0.8rem;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="overlay" style="background-color: rgba(0,0,0,0.65); position: absolute; top:0; left: 0; height: 100%; width: 100%; z-index: 30 !important">
+</div>
+  <header class="masthead">
+      <div class="container">
+        <div class="intro-text" style="position: relative; z-index: 1000 !important;">
+          <!-- <div class="intro-lead-in">Welcome To Our Studio!</div> -->
+          <div class="intro-heading text-uppercase" style="font-size: 2em; line-height: 1.5em; "><span style="font-size: 2em;">"</span>Nobody made a greater mistake than he who did nothing because he could do only a little...<span style="font-size: 2em;">"</span></div>
+          <a class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#donateModal" style="z-index: 3000 !important;">Contribute Now</a>
+        </div>
+    </div>
+  </header>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Special Stories</h2>
+          <h3 class="section-subheading text-muted">Some stories just motivate us to make valuable contributions and also keep us going...</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-book fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/i(4).jpg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Shreeshant Katekar</h4>
+            <p class="text-muted">"I want to be an actor when I grow up !!"</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-book fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/i(1).jpeg' %}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Ganesh Sahukar</h4>
+            <p class="text-muted">"There is a bright day after every dark night..."</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-book fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="{% static 'img/i(3).jpg'%}" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Aakruti Dave</h4>
+            <p class="text-muted">"I want to become a doctor"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Donation Stats</h2>
+          <h3 class="section-subheading text-muted">We believe in transparent donation mechanisms for the true development of the society...</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+            <div class="progress-circle p50">
+              <span>50%</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+          </span>
+          <h4 class="service-heading">Education && Advocacy</h4>
+          <p class="text-muted" style=" font-weight: bold;">623 annual scholarships given<br>
+                                  - 221 for elementary school <br>
+                                  - 271 for middle and high school <br>
+                                  - 59 for bachelor degree <br>
+                                  - 32 for post graduate degree <br>
+                                  - 40 for engineering degree <br>
+                                  In 11 different states of India</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i> -->
+            <div class="progress-circle p46">
+              <span>46%</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+          </span>
+          <h4 class="service-heading">Relief & Development</h4>
+          <p class="text-muted" style="font-weight: bold;">Strengthing the capacities of health care and humanitarian actors to implement programmes using a conflict sensitive approach.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-lock fa-stack-1x fa-inverse"></i> -->
+            <div class="progress-circle p4">
+              <span>4%</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+          </span>
+          <h4 class="service-heading">Fundraising</h4>
+          <p class="text-muted" style="font-weight:bold">It helps you to open up new volunteering opportunities and gives you motivation and we can, together, change the world </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Our Journey</h2>
+          <h3 class="section-subheading text-muted">"No act of kindness, no matter how small, is ever wasted."</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/1.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2009-2011</h4>
+                  <h4 class="subheading">Our Humble Beginnings</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">At first we four friends thought of helping out poor kids in our locality also we used to give lessons in nearby slums every Sunday mornings.Later on as we grew up we decided to start an organisation and formed a team of 20 alike. In the beginning we served only Maharastra for two years and progressed eventualy. </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/2.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2011-2014</h4>
+                  <h4 class="subheading">An Agency is Born</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Later on our connections grew up and were able to expand our social services.We raised good amount of funds with help of fundraisings and served 4 neighbouring states too.We were on cloud nine, serving almost 1200 children and were looking forward for more opportunities.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2014-2016</h4>
+                  <h4 class="subheading">Tremendous Growth</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">As time passed by we had a large team with us. Now we also started giving employment to the poor and reached out to each and everyone who needed any kind of help.We had our NGO serving 7 states helping about 2500 children and gave employment to 500 individuals.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="{% static 'img/about/4.jpg' %}" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>2016-2019</h4>
+                  <h4 class="subheading">At our best</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">Being an organisation growing at such a pace reaching out to everyone who needed our help we had almost reached our goals but for sure wanted to go on and on expanding our reach. We also held several campaigns in the last two years benefitting a number of people in various ways. We also started small educational institues in remote villages at several places.We aim to reach every single individual who needs us. </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <a data-toggle="modal" href="#donateModal" style="color: white">
+              <div class="timeline-image">
+                <h4>Donate<br><i class="fas fa-donate fa-2x" style="margin-top: 0.4rem;"></i></h4>
+              </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Our Team</h2>
+            <h3 class="section-subheading text-muted">The measure of a life, after all, is not its duration, but its donation.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'img/i(8).jpg' %}" alt="">
+              <h4>Kavita Patil</h4>
+              <p class="text-muted">Volunteer</p>
+  
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" style="object-fit: cover !important;" src="{% static 'img/i(10).jpg' %}" alt="">
+              <h4>Ramesh Sahu</h4>
+              <p class="text-muted">Volunteer</p>
+  
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle"  src="{% static 'img/i(9).png' %}" alt="">
+              <h4>Diya Shah</h4>
+              <p class="text-muted">Volunteer</p>
+  
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted" style="font-size:1.5rem">The moral test of a society is how that society treats those who are in the dawn of life -- the children; those who are in the twilight of life -- the elderly; and those who are in the shadow of life -- the sick, the needy, and the handicapped.   </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Contact -->
+  <section id="contact" style="margin: auto 0 !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Feedback For us</h2>
+          <h3 class="section-subheading text-muted">Please help us improve the working of our organisation...</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form name="sentMessage" novalidate="novalidate" method="POST" action="{% url 'giveFeedback' %}">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" name="name" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Your Website 2019</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Homeless to stardom</h2>
+                <p class="item-intro text-muted">The incredible success story of Shreeshant...</p>
+                <img class="img-fluid d-block mx-auto" src="{% static 'img/i(5).jpg' %}" alt="hgfsvjnajsb">
+                <p>Shreeshant lived with his ailing mother in a bus stand, living off of the streets and the kindness of strangers. After his mother’s death, Shreeshant was left alone and had nowhere to go. For young Shreeshant, the future seemed bleak and desolate. This was until we found Shreeshant and decided to take him under our wings.
+  Shreeshant showed a lot of promise and excelled in several fields including sports and acting. He developed a keen interest particularly towards dancing and acting. He was encouraged to participate and showcase his skills at various events and was also made a part of numerous street plays and short films. After he finished his 10th, special arrangements were made to train Shreeshant to hone his skills and talent.
+
+During one such training, Shreeshant had the opportunity to audition for a Kannada TV serial and was selected. Shreeshant now plays the lead role in the serial ‘Shani’ which broadcasts regularly on all weekdays on the ‘Colour Kannada’ channel.  Shreeshant is now one of the most celebrated TV stars in Karnataka.</p>
+                <ul class="list-inline">
+                  <li>Date: February 2012</li>
+                  <li>Funds Provided:$80,000</li>
+
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">NOTHING CAN STOP YOU</h2>
+                <p class="item-intro text-muted">Promising Steps Towards A New Milestone</p>
+                <img class="img-fluid d-block mx-auto" src="{% static 'img/i(6).png' %}" alt="">
+                <p>  Ganesh had delayed milestones early on in his childhood and was later diagnosed as mentally retarded with 75 % level disability. He was unruly, screamed a lot, broke things in the house and threw frequent tantrums. He was unable to speak or respond to even simple instructions. His mother went through a very difficult life with no support or money. With Ganesh requiring constant care and monitoring, she could not take on any job since there was no one to look after Ganesh. Having heard about ZeroTear from her neighbor, she approached the NGO for employment as a domestic maid hoping she would be able to work and take care of Ganesh at the same time. Not only was she given the job, she was also offered training as a caregiver and Ganesh was admitted in the Centre. This was a major turning point for both Ganesh and his mother.
+
+Ganesh was provided with special education and therapy and has shown remarkable improvement ever since. He speaks well and is physically very active now. With ZeroTear’s help, he was able to get a Disability Pension from the government. His mother is paid a decent salary with food and clothing for both of them and they are now able to live peacefully and comfortably.</p>
+                <ul class="list-inline">
+                  <li>Date: March 2013</li>
+                  <li>Funds Provided: $1,20,000</li>
+
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">HOPE WINS</h2>
+                <p class="item-intro text-muted">Where there is a way there is a way...Never Give Up</p>
+                <img class="img-fluid d-block mx-auto" src="{% static 'img/i(7).jpg' %}" alt="">
+                <p>Aakruti was just ten years old when her parents died of severe illness. Due to poverty they were unable to go to the local hospital. The little girl was left alone in this unfamiliar world with her younger sister.
+Soon they moved to their relatives’ house but the children were badly treated by them. Aakruti took her younger sister and started living on the street.
+After two years Aakruti’s maternal aunt came to know about their situation and brought the siblings with her. The aunt worked as bonded labour and earned less than Rupees 50 per day. Despite her willingness to support children, poverty forced her to look out for alternate ways.
+
+She came to know about ZeroTear from Child Welfare Committee Anantapur and decided to send the siblings. “I was scared at the idea of going and living in a new place but Aunty assured us that it is the best place for needy children,” said Aakruti.
+
+ZeroTear welcomed Aakruti and her sister warmly. She introduced them to their ZeroTear brothers and sisters and showed their room. The children were happy to see a clean room with bed and some toys. Aakruti was cheerful and wanted to play with her toys. She innocently told , “I am holding a toy for the first time in my life.”
+
+Since Aakruti had never been to school, she was given some extra coaching before she could begin formal school.
+
+Today, she regularly goes to school and actively participates in extracurricular activities.She is ambititous and looking forward to becoming a doctor and treat everyone without any fee.</p>
+                <ul class="list-inline">
+                  <li>Date: November 2016</li>
+                  <li>Funds Provided:$75,000</li>
+
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Donate -->
+  <div class="portfolio-modal modal fade" id="donateModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" style="width: 80% !important; margin: auto auto !important;">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <h2>Donate and Spread Love <i class="fas fa-hands-helping" style="color: #fed136; margin-bottom: 0.6rem;"></i></h2>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <form name="sentMessage" novalidate="novalidate" method="POST" action="{% url 'donate' %}">
+                {% csrf_token %}
+                <div class="row" style="margin: 0 !important;">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." name="name">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" id="email" type="email" placeholder="Email Id" required="required" data-validation-required-message="Please enter your email address." name="email">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" id="phone" type="tel" placeholder="Area" required="required" data-validation-required-message="Please enter your area name." name="area">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <p class="help-block text-danger"></p>
+                      <input type="number" class="form-control" placeholder="Enter Amount" name="amount" style="height: 2rem !important;"/>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-lg-6 text-center">
+                    <div id="success"></div>
+                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Donate</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>
+  {% endblock %}
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script> -->
+
+  <!-- Plugin JavaScript -->
+  <!-- <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script> -->
+
+  <!-- Contact form JavaScript -->
+  <!-- <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+  <script src="{% static 'js/contact_me.js' %}"></script> -->
+
+  <!-- Custom scripts for this template -->
+  <!-- <script src="{% static 'js/agency.min.js' %}"></script> -->
+
+<!-- </body> -->
+
+<!-- </html> -->

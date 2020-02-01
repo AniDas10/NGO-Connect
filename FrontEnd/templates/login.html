@@ -1,0 +1,87 @@
+{% extends 'partials/_navbar.html' %}
+{% load static %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ZeroTear NGO</title>
+
+  Bootstrap core CSS
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  Custom fonts for this template
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
+  Custom styles for this template
+  <link href="{% static 'css/agency.css' %}" rel="stylesheet">
+  <link href="{% static 'css/css-circular-prog-bar.css' %}" rel="stylesheet">
+
+</head> -->
+{% block content %}
+
+<!-- <body id="page-top"> -->
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand mx-auto" href="{% url 'home' %}" style="font-size: 1.6em;"  ><i class="fas fa-heartbeat fa-1x"></i> ZeroTear NGO</a>
+    
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top: 6.5rem;">
+    <div class="row justify-content-center">
+      <h1 class="text-center justify-content-center"><i class="fas fa-fingerprint fa-3x" style="color: #fed136; margin: 2.6rem 2.6rem;"></i><br>Access Admin Panel</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 offset-lg-4">
+        <form name="sentMessage" method="POST" action="{% url 'login' %}">
+          {% csrf_token %}
+          <div class="row" style="margin: 0 !important;">
+            <div class="col-md-12">
+              <div class="form-group" style="margin-top:3.2rem ">
+                <input class="form-control" id="name" name="username" type="text" placeholder="Username" required="required" data-validation-required-message="Please enter your username.">
+              </div>
+              <div class="form-group"style="margin-top:1.6rem; margin-bottom:2.3rem;">
+                <input class="form-control" id="email" name="password" type="password" placeholder="Password" required="required" data-validation-required-message="Please enter your password.">
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <!-- <div id="success"></div> -->
+              <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Log In</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script> -->
+  <!-- <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script> -->
+
+  <!-- Plugin JavaScript -->
+  <!-- <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script> -->
+
+  <!-- Contact form JavaScript -->
+  <!-- <script src="{% static 'js/jqBootstrapValidation.js' %}"></script> -->
+  <!-- <script src="{% static 'js/contact_me.js' %}"></script> -->
+
+  <!-- Custom scripts for this template -->
+  <!-- <script src="{% static 'js/agency.min.js' %}"></script>
+
+</body>
+ -->
+<!-- </html> -->
