@@ -61,4 +61,4 @@ def get_df():
     dic = df.to_dict()
     return dic
 
-get_df()
+print(get_df())
