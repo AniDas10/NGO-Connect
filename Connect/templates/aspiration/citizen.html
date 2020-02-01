@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +27,7 @@
     
     <link rel="stylesheet" href="{% static 'aspiration/css/flaticon.css'%}">
     <link rel="stylesheet" href="{% static 'aspiration/css/icomoon.css'%}">
-    <link rel="stylesheet" href="{% static 'aspiration/css/style.css'%}">
-    <!-- Main css -->
-    <link rel="stylesheet" href="{% static 'citizen/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'citizen/css/style.css'%}">
 </head>
 <body style="overflow: hidden;">
 
@@ -123,7 +122,7 @@
   <script src="{% static 'aspiration/js/google-map.js' %}"></script>
   <script src="{% static 'aspiration/js/main.js' %}"></script>
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'citizen/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'citizen/js/main.js' %}"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

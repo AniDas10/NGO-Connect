@@ -49,3 +49,10 @@ def follow_ngo(request, id):
     user.follows.add(ngo)
     user.save()
     return redirect('/ngo/'+ngo.name)
+
+
+def ngo_login(request):
+    return render(request, 'aspiration/login.html')
+
+def ngo_register(request):
+    return render(request, 'aspiration/ngo_reg.html')

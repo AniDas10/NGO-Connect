@@ -5,6 +5,8 @@ from django.conf import settings
 from . import views
 
 urlpatterns = [
-    path('<str:title>/', views.recommend_ngo, name='recommend_ngo'),
-    path('follow/<int:id>', views.follow_ngo, name='follow_ngo')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('recommend/<str:title>/', views.recommend_ngo, name='recommend_ngo'),
+    path('follow/<int:id>', views.follow_ngo, name='follow_ngo'),
+    path('register/', views.ngo_register, name='ngo_register'),
+    path('login/', views.ngo_login, name='ngo_login')
+]

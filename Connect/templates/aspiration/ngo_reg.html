@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,15 +23,15 @@
     
     <link rel="stylesheet" href="{% static 'aspiration/css/flaticon.css'%}">
     <link rel="stylesheet" href="{% static 'aspiration/css/icomoon.css'%}">
-    <link rel="stylesheet" href="{% static 'aspiration/css/style.css'%}">
     <!-- Font Icon -->
     
-
-
+    
+    
     <link rel="stylesheet" href="{% static 'ngo/fonts/material-icon/css/material-design-iconic-font.min.css'%}">
     <link rel="stylesheet" href="{% static 'ngo/vendor/nouislider/nouislider.min.css'%}">
-
+    
     <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'aspiration/css/style.css'%}">
     <link rel="stylesheet" href="{% static 'ngo/css/style.css' %}">
 </head>
 <body style="overflow: hidden;">
@@ -59,7 +60,7 @@
         <div class="container">
             <div class="signup-content">
                 <div class="signup-img">
-                    <img src="images/form-img.jpg" alt="">
+                    <img src="{% static 'ngo/images/form-img.jpg' %}" alt="">
                     <div class="signup-img-content">
                         <h2>Register now </h2>
                         <p>be a part of a great cause !</p>
@@ -145,6 +146,6 @@
     <script src="{% static 'ngo/vendor/wnumb/wNumb.js' %}"></script>
     <script src="{% static 'ngo/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
     <script src="{% static 'ngo/vendor/jquery-validation/dist/additional-methods.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'ngo/js/main.js' %}"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
