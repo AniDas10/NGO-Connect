@@ -54,12 +54,12 @@ body {
 	text-align: center;
 	position: relative;
 	padding: 6px 0 0;
-	margin-bottom: 47px;
+	margin-bottom: 27px;
 }
 .form-v6-content .form-row {
     width: 100%;
 }
-.form-v6-content .form-detail .form-row-last {
+.form-v6-content .form-detail {
 	text-align: center;
 }
 .form-v6-content .form-detail .input-text {
@@ -67,7 +67,7 @@ body {
 }
 .form-v6-content .form-detail input {
 	width: 92%;
-    padding: 0px 15px 10px 15px;
+    padding: 0px 10px 10px 15px;
     border: 2px solid transparent;
     border-bottom: 2px solid #e5e5e5;
     appearance: unset;
