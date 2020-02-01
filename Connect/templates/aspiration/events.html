@@ -1,9 +1,4 @@
-<!-- <div class="goal">
-  <p><span>$3,800</span> to go</p>
-  <div class="progress" style="height:20px">
-    <div class="progress-bar progress-bar-striped" style="width:70%; height:20px">70%</div>
-  </div>
-</div> -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,24 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="{% static 'aspiration/css/open-iconic-bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/animate.css'%}">
     
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="{% static 'aspiration/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/magnific-popup.css'%}">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="{% static 'aspiration/css/aos.css'%}">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'aspiration/css/ionicons.min.css'%}">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="{% static 'aspiration/css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/jquery.timepicker.css'%}">
 
     
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'aspiration/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/icomoon.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/style.css'%}">
   </head>
   <body>
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -55,7 +50,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url({% static 'aspiration/images/bg_2.jpg' %});" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -74,7 +69,7 @@
 						<div class="row">
 							<div class="col-md-12 d-flex ftco-animate">
 		            <div class="blog-entry align-self-stretch d-md-flex">
-		              <a href="event-detail.html			" class="block-20" style="background-image: url('images/image_1.jpg');">
+		              <a href="event-detail.html			" class="block-20" style="background-image: url({% static 'aspiration/images/image_1.jpg' %});">
 		              </a>
 		              <div class="text d-block pl-md-4">
 		              	<div class="meta mb-3">
@@ -136,7 +131,7 @@
             <div class="sidebar-box ftco-animate">
               <h3 class="heading-2"> NGOs you can follow</h3>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url({% static 'aspiration/images/image_1.jpg' %});"></a>
                 <div class="text">
                   <h3 class="heading-1"><a href="#">NGO-tagline</a></h3>
                   <div class="meta">
@@ -147,7 +142,7 @@
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url({% static 'aspiration/images/image_1.jpg' %});"></a>
                 <div class="text">
                   <h3 class="heading-1"><a href="#">NGO-tagline</a></h3>
                   <div class="meta">
@@ -159,24 +154,7 @@
               </div>
               
             </div>
-<!-- 
-            <div class="sidebar-box ftco-animate">
-              <h3 class="heading-2">Tag Cloud</h3>
-              <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">donate</a>
-                <a href="#" class="tag-cloud-link">charity</a>
-                <a href="#" class="tag-cloud-link">non-profit</a>
-                <a href="#" class="tag-cloud-link">organization</a>
-                <a href="#" class="tag-cloud-link">child</a>
-                <a href="#" class="tag-cloud-link">abuse</a>
-                <a href="#" class="tag-cloud-link">help</a>
-                <a href="#" class="tag-cloud-link">volunteer</a>
-              </div>
-            </div> -->
-
-            
           </div>
-
         </div>
       </div>
     </section> <!-- .section -->
@@ -248,21 +226,21 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
+  <script src="{% static 'aspiration/js/jquery.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/popper.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'aspiration/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/aos.js' %}"></script>
+  <script src="{% static 'aspiration/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'aspiration/js/scrollax.min.js' %}"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
+  <script src="{% static 'aspiration/js/google-map.js' %}"></script>
+  <script src="{% static 'aspiration/js/main.js' %}"></script>
     
   </body>
 </html>
