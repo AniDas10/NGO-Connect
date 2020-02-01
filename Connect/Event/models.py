@@ -15,3 +15,6 @@ class Event(models.Model):
     expected_footfall = models.BigIntegerField()
     price = models.IntegerField(default=0)
     location = models.TextField()
+
+    def __str__(self):
+        return self.name

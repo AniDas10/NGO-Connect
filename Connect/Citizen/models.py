@@ -17,3 +17,6 @@ class Citizen(models.Model):
     points = models.IntegerField(default=10)
     city = models.CharField(max_length=240)
     email = models.EmailField()
+
+    def __str__(self):
+        return self.email
