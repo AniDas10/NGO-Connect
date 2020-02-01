@@ -214,7 +214,7 @@ input[type=radio] {
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: 80vh; }
 
 figure {
   margin: 0; }
@@ -241,6 +241,33 @@ h2 {
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 32px; }
+
+  #profile_photo::-webkit-file-upload-button {
+    display: none;
+  }
+  #profile_photo::before {
+    content: 'Select some files';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 12px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+  #profile_photo:hover::before {
+    border-color: black;
+  }
+
+  #profile_photo {
+    border: none;
+  }
+
 
 .clear {
   clear: both; }
@@ -278,7 +305,7 @@ body {
   margin-bottom: 23px;
   position: relative; }
 
-input, select {
+input, select, textarea {
   display: block;
   width: 100%;
   border: 1px solid #ebebeb;
@@ -288,7 +315,7 @@ input, select {
   font-weight: 500;
   font-size: 13px; }
   input:focus, select:focus {
-    border: 1px solid #ff6801; }
+    border: 1px solid #fed136; }
 
 label {
   font-size: 14px;
@@ -355,9 +382,9 @@ input[type=radio] {
   position: absolute;
   visibility: hidden; }
   input[type=radio]:checked ~ .check {
-    border: 1px solid #ff6801; }
+    border: 1px solid #fed136; }
   input[type=radio]:checked ~ .check::before {
-    background: #ff6801; }
+    background: #fed136; }
 
 .form-select {
   position: relative; }
@@ -425,14 +452,14 @@ select {
   color: #999;
   margin-right: 8px; }
   #reset:hover {
-    background: #ff6801;
+    background: #fed136;
     color: #fff; }
 
 #submit {
-  background: #ff6801;
+  background: #fed136;
   color: #fff; }
   #submit:hover {
-    background-color: #cd5300; }
+    background-color: #ffc800; }
 
 @media screen and (max-width: 992px) {
   .container {
