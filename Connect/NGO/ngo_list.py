@@ -62,4 +62,12 @@ def get_df():
     dic = [v for k, v in dic.items()]
     return dic
 
+<<<<<<< HEAD:Connect/NGO/ngo_list.py
 print(get_df())
+=======
+<<<<<<< HEAD
+print(get_df())
+=======
+#get_df()
+>>>>>>> e1f9d86639d8861f940ef20e062aa9a302c9dd2d
+>>>>>>> dc93ec19dad9254bbbc7d03db1e0aaf80d1e52f1:Scripts/ngo_list.py
