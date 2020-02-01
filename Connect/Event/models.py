@@ -14,3 +14,4 @@ class Event(models.Model):
     ngo = models.OneToOneField(NGO)
     expected_footfall = models.BigIntegerField()
     price = models.IntegerField(default=0)
+    location = models.TextField()
