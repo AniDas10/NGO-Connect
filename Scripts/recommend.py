@@ -4,8 +4,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 from rake_nltk import Rake
 import pandas as pd
 import numpy as np
+import ngo_list
 
-df = pd.read_csv("data.csv")
+#df = pd.read_csv("data.csv")
+df = ngo_list.get_df()
 df = df[['Name', 'Cause', 'City', 'Details']]
 df.fillna("null", inplace=True)
 

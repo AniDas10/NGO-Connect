@@ -9,6 +9,11 @@ verify_ssl = true
 django = "*"
 pandas = "*"
 numpy = "*"
+psycopg2 = "*"
+psycopg2-binary = "*"
+pillow = "*"
+sklearn = "*"
+rake-nltk = "*"
 
 [requires]
 python_version = "3.6"

@@ -59,6 +59,10 @@ def get_df():
     df.columns = ['Name', 'Link', 'Cause', 'City', 'Details']
     dic = {}
     dic = df.to_dict()
-    return dic
+    return df
 
+<<<<<<< HEAD
 print(get_df())
+=======
+#get_df()
+>>>>>>> e1f9d86639d8861f940ef20e062aa9a302c9dd2d
