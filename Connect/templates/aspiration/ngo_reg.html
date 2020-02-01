@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>NGO registration</title>
+    <link rel="stylesheet" href="{% static 'aspiration/css/open-iconic-bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/animate.css'%}">
+    
+    <link rel="stylesheet" href="{% static 'aspiration/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/magnific-popup.css'%}">
 
+    <link rel="stylesheet" href="{% static 'aspiration/css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'aspiration/css/ionicons.min.css'%}">
+
+    <link rel="stylesheet" href="{% static 'aspiration/css/bootstrap-datepicker.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/jquery.timepicker.css'%}">
+
+    
+    <link rel="stylesheet" href="{% static 'aspiration/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/icomoon.css'%}">
+    <link rel="stylesheet" href="{% static 'aspiration/css/style.css'%}">
     <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+    
+
+
+    <link rel="stylesheet" href="{% static 'ngo/fonts/material-icon/css/material-design-iconic-font.min.css'%}">
+    <link rel="stylesheet" href="{% static 'ngo/vendor/nouislider/nouislider.min.css'%}">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'ngo/css/style.css' %}">
 </head>
 <body style="overflow: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container-fluid px-lg-5">
+	      <a class="navbar-brand" href="index.html">Aspiration</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
 
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+	        	<li class="nav-item active"><a href="citizen.html" class="nav-link">Volunteer Registration</a></li>
+	        	<li class="nav-item"><a href="ngo_reg.html" class="nav-link">NGO Registration </a></li>
+	          <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
     <div class="main">
 
         <div class="container">
@@ -101,11 +140,11 @@
     </div>
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/nouislider/nouislider.min.js"></script>
-    <script src="vendor/wnumb/wNumb.js"></script>
-    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{% static 'ngo/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'ngo/vendor/nouislider/nouislider.min.js' %}"></script>
+    <script src="{% static 'ngo/vendor/wnumb/wNumb.js' %}"></script>
+    <script src="{% static 'ngo/vendor/jquery-validation/dist/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'ngo/vendor/jquery-validation/dist/additional-methods.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
