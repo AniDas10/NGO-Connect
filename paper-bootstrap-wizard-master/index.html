@@ -64,7 +64,7 @@
 	<!-- End Google Tag Manager (noscript) -->
 	<div class="image-container set-full-height" style="background-image: url('assets/img/paper-1.jpeg')">
 	    <!--   Creative Tim Branding   -->
-	    <a href="https://creative-tim.com">
+	    <!-- <a href="https://creative-tim.com">
 	         <div class="logo-container">
 	            <div class="logo">
 	                <img src="assets/img/new_logo.png">
@@ -75,11 +75,11 @@
 	        </div>
 	    </a>
 
-		<!--  Made With Paper Kit  -->
+		  Made With Paper Kit  
 		<a href="https://demos.creative-tim.com/paper-kit" class="made-with-pk">
 			<div class="brand">PK</div>
 			<div class="made-with">Made with <strong>Paper Kit</strong></div>
-		</a>
+		</a> -->
 
 	    <!--   Big container   -->
 	    <div class="container">
@@ -112,19 +112,28 @@
 											</a>
 										</li>
 			                            <li>
-											<a href="#account" data-toggle="tab">
+											<a href="#address" data-toggle="tab">
 												<div class="icon-circle">
 													<i class="ti-settings"></i>
 												</div>
-												Purpose
+												Location
 											</a>
 										</li>
+										<li>
+											<a href="#category" data-toggle="tab">
+												<div class="icon-circle">
+													<i class="ti-settings"></i>
+												</div>
+												Category
+											</a>
+										</li>
+			                            
 			                            <li>
-											<a href="#address" data-toggle="tab">
+											<a href="#description" data-toggle="tab">
 												<div class="icon-circle">
 													<i class="ti-map"></i>
 												</div>
-												Location
+												Purpose
 											</a>
 										</li>
 			                        </ul>
@@ -160,70 +169,36 @@
 											</div>
 										</div>
 		                            </div>
-		                            <div class="tab-pane" id="account">
-		                                <h5 class="info-text"> What are you doing? (checkboxes) </h5>
-		                                <div class="row">
-		                                    <div class="col-sm-8 col-sm-offset-2">
-		                                        <div class="col-sm-4">
-		                                            <div class="choice" data-toggle="wizard-checkbox">
-		                                                <input type="checkbox" name="jobb" value="Design">
-		                                                <div class="card card-checkboxes card-hover-effect">
-		                                                    <i class="ti-paint-roller"></i>
-															<p>Design</p>
-		                                                </div>
-		                                            </div>
-		                                        </div>
-		                                        <div class="col-sm-4">
-		                                            <div class="choice" data-toggle="wizard-checkbox">
-		                                                <input type="checkbox" name="jobb" value="Code">
-		                                                <div class="card card-checkboxes card-hover-effect">
-		                                                    <i class="ti-pencil-alt"></i>
-															<p>Code</p>
-		                                                </div>
-		                                            </div>
-		                                        </div>
-		                                        <div class="col-sm-4">
-		                                            <div class="choice" data-toggle="wizard-checkbox">
-		                                                <input type="checkbox" name="jobb" value="Develop">
-		                                                <div class="card card-checkboxes card-hover-effect">
-		                                                    <i class="ti-star"></i>
-															<p>Develop</p>
-		                                                </div>
-		                                            </div>
-		                                        </div>
-		                                    </div>
-		                                </div>
-		                            </div>
 		                            <div class="tab-pane" id="address">
 		                                <div class="row">
 		                                    <div class="col-sm-12">
-		                                        <h5 class="info-text"> Are you living in a nice area? </h5>
+		                                        <h5 class="info-text"> Where is this event going to take place? </h5>
 		                                    </div>
 		                                    <div class="col-sm-7 col-sm-offset-1">
 		                                    	<div class="form-group">
-		                                            <label>Street Name</label>
-		                                            <input type="text" class="form-control" placeholder="5h Avenue">
+		                                            <label>Address</label>
+		                                            <input type="text" class="form-control" placeholder="Near Churchgate Stn">
 		                                        </div>
 		                                    </div>
 		                                    <div class="col-sm-3">
 		                                        <div class="form-group">
-		                                            <label>Street Number</label>
-		                                            <input type="text" class="form-control" placeholder="242">
+		                                            <label>Pincode</label>
+		                                            <input type="text" class="form-control" placeholder="400101">
 		                                        </div>
 		                                    </div>
 		                                    <div class="col-sm-5 col-sm-offset-1">
 		                                        <div class="form-group">
 		                                            <label>City</label>
-		                                            <input type="text" class="form-control" placeholder="New York...">
+		                                            <input type="text" class="form-control" placeholder="Mumbai">
 		                                        </div>
 		                                    </div>
 		                                    <div class="col-sm-5">
 		                                        <div class="form-group">
 		                                            <label>Country</label><br>
 		                                            <select name="country" class="form-control">
-		                                                <option value="Afghanistan"> Afghanistan </option>
-		                                                <option value="Albania"> Albania </option>
-		                                                <option value="Algeria"> Algeria </option>
+		                                                <option value="India"> India </option>
+		                                                <option value="America"> America </option>
+		                                                <option value="Africa"> Africa </option>
 		                                                <option value="American Samoa"> American Samoa </option>
 		                                                <option value="Andorra"> Andorra </option>
 		                                                <option value="Angola"> Angola </option>
@@ -234,12 +209,96 @@
 		                                        </div>
 		                                    </div>
 		                                </div>
+									</div>
+									<div class="tab-pane" id="category">
+		                                <h5 class="info-text"> The event is most likely related to </h5>
+		                                <div class="row">
+		                                    <div class="col-sm-8 col-sm-offset-2">
+		                                        <div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="disease" value="disease">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-paint-roller"></i>
+															<p>Disease</p>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="education" value="education">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-pencil-alt"></i>
+															<p>Education</p>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="hunger" value="hunger">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-star"></i>
+															<p>Hunger</p>
+		                                                </div>
+		                                            </div>
+												</div>
+												<div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="blood_donation" value="blood_donation">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-star"></i>
+															<p>Blood Donation</p>
+		                                                </div>
+		                                            </div>
+												</div>
+												<div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="senior_citizen" value="senior_citizen">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-star"></i>
+															<p>Senior Citizen</p>
+		                                                </div>
+		                                            </div>
+												</div>
+												<div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="other" value="other">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-star"></i>
+															<p>Other</p>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="description">
+		                                <div class="row">
+		                                    <h5 class="info-text"> Drop us a small description. </h5>
+		                                    <div class="col-sm-6 col-sm-offset-1">
+		                                        <div class="form-group">
+		                                            <label>Describe this event </label>
+		                                            <textarea class="form-control" placeholder="" rows="9"></textarea>
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-4">
+		                                        <div class="form-group">
+		                                            <label>Example</label>
+		                                            <p class="description">"We are here aiming to raise funds for the poverty-driven kids"</p>
+		                                        </div>
+											</div>
+											<div class="col-sm-4 ">
+												<div class="form-group">
+													<label>Date of Event <small>(required)</small></label>
+													<input name="date" type="datetime" placeholder="Your Event date">
+												</div>
+											</div>
+		                                </div>
 		                            </div>
 		                        </div>
 		                        <div class="wizard-footer">
 		                            <div class="pull-right">
 		                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd' name='next' value='Next' />
-		                                <input type='button' class='btn btn-finish btn-fill btn-warning btn-wd' name='finish' value='Finish' />
+		                                <a href="index.html"><input type='button' class='btn btn-finish btn-fill btn-warning btn-wd' name='finish' value='Finish' /></a>
 		                            </div>
 
 		                            <div class="pull-left">
@@ -254,36 +313,12 @@
 	    	</div><!-- end row -->
 		</div> <!--  big container -->
 
-	    <div class="footer">
-	        <div class="container text-center">
-	            Made with <i class="fa fa-heart heart"></i> by <a href="https://www.creative-tim.com">Creative Tim</a>. Free download <a href="https://www.creative-tim.com/product/paper-bootstrap-wizard">here.</a>
-	        </div>
-	    </div>
 		<div class="fixed-plugin">
 			<div class="dropdown open">
 				<a href="#" data-toggle="dropdown">
 					<i class="fa fa-cog fa-2x"> </i>
 				</a>
 				<ul class="dropdown-menu">
-					<li class="header-title">Examples</li>
-					<li class="active">
-						<a href="wizard-create-profile.html">
-						   <img src="assets/img/wizard-create-profile.png">
-						   Create Profile
-						</a>
-					</li>
-					<li>
-						<a href="wizard-find-desk.html">
-						   <img src="assets/img/wizard-find-desk.png">
-						   Find Desk
-						</a>
-					</li>
-					<li>
-						<a href="wizard-list-place.html">
-						   <img src="assets/img/wizard-list-place.png">
-						   List Your Place
-						</a>
-					</li>
 					<li class="header-title">Colors</li>
 					<li class="adjustments-line">
 						<a href="javascript:void(0)" class="switch-trigger">
@@ -296,17 +331,6 @@
 							</div>
 							<div class="clearfix"></div>
 						</a>
-					</li>
-				   <li class="tutorial">
-						<div class="text-center">
-							<a href="documentation/elements.html" target="_blank" class="btn btn-default btn-fill btn-block">Documentation</a>
-						</div>
-					</li>
-					<li class="license">
-						Personal License
-						<div class="text-center">
-							<a href="https://www.creative-tim.com/product/paper-bootstrap-wizard" target="_blank" class="btn btn-info btn-fill btn-block">Download, it's free!</a>
-						</div>
 					</li>
 				</ul>
 			</div>
