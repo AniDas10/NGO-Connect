@@ -1,4 +1,5 @@
 from django.db import models
+from NGO.models import NGO
 
 # Create your models here.
 class Event(models.Model):
@@ -10,3 +11,6 @@ class Event(models.Model):
     event_poster = models.ImageField(upload_to='Events/Posters')
     tagline = models.CharField(max_length=540)
     sentiment = models.IntegerField(default=0)
+    ngo = models.OneToOneField(NGO)
+    expected_footfall = models.BigIntegerField()
+    price = models.IntegerField(default=0)

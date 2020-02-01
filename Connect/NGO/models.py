@@ -25,8 +25,10 @@ class NGO(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=250)
     ngo = models.ForeignKey(NGO, on_delete=models.CASCADE)
+    published_date = models.DateTimeField(auto_now=True)
+    likes = models.IntegerField(default=1)
 
-class Similar(models.Model):
-    # This will store the id of the NGO and then store the ngos that are similar to that ngo
-    prime_ngo = models.CharField(max_length=24)
-    similar_ngo = models.ForeignKey(NGO, on_delete=models.DO_NOTHING)
+# class Similar(models.Model):
+#     # This will store the id of the NGO and then store the ngos that are similar to that ngo
+#     prime_ngo = models.CharField(max_length=24)
+#     similar_ngo = models.ForeignKey(NGO, on_delete=models.DO_NOTHING)
