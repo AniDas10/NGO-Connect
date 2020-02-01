@@ -15,4 +15,4 @@ def recommend_ngo(request, title):
         'NGOS': NGO.objects.all(),
         'Recommendations': recs,
     }
-    return render(request, 'aspiration/events.html', payload)
+    return render(request, 'aspiration/ngo_list.html', payload)
