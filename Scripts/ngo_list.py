@@ -59,6 +59,6 @@ def get_df():
     df.columns = ['Name', 'Link', 'Cause', 'City', 'Details']
     dic = {}
     dic = df.to_dict()
-    return dic
+    return df
 
-get_df()
+#get_df()
