@@ -2,6 +2,23 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 
+def WordSplitter(n):
+    list1=[]
+    punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+    no_punct = ""
+    for char in n:
+        if char not in punctuations:
+            no_punct = no_punct + char
+    words=no_punct.split()
+    cit = []
+    li = [word for word in words if word[0].isupper()]
+    rem = ['Headquartered', 'India', 'Indian', 'New']
+    for word in li:
+        if word not in rem:
+            cit.append(word)
+
+    return cit
+
 def get_df():
     paras = {23:0, 31:1, 41:2, 48:3, 53:4, 63:5, 69:6, 77:7, 79:8, 86:9, 94:10, 99:11, 104:12, 108:13, 115:14, 120:15, 123:16, 127:17, 130:18, 135:19}
     key_list = list(paras.keys())
@@ -28,7 +45,13 @@ def get_df():
         elif i%2 == 0:
             cause[int(i/2)] = c[1].strip()
         elif i%2 == 1:
-            city[int(i/2 - 0.5)] = c[1].strip()
+            ci = c[1].strip()
+            l = WordSplitter(ci)
+            city_string = ""
+            for li in l:
+                city_string += li + " "
+            city_string = city_string.rstrip()
+            city[int(i/2 - 0.5)] = city_string
         
     data = [names, link, cause, city, details]
     dff = pd.DataFrame(data)
