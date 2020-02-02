@@ -14,6 +14,7 @@ class Citizen(models.Model):
     events = models.ManyToManyField(Event)
     date_of_joining = models.DateTimeField(auto_now_add=True)
     follows = models.ManyToManyField(NGO)
+    attends = models.TextField(default='')
     points = models.IntegerField(default=10)
     city = models.CharField(max_length=240)
     email = models.EmailField()
