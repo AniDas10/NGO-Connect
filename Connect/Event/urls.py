@@ -5,6 +5,6 @@ from django.conf import settings
 from . import views
 
 urlpatterns = [
-    path('<str:event>/', views.recommend_event, name='recommend_event'),
-    path('<str:event>/', views.recommend_event, name='recommend_event')
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('recommend/<str:event>/', views.recommend_event, name='recommend_event'),
+    path('volunteer/<int:id>', views.volunteer_event, name='volunteer_event'),
+]

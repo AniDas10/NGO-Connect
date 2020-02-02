@@ -90,7 +90,7 @@
                       {% if event.is_volunteer %}
                       <p><a href="event-detail.html" class="btn btn-dark py-2 px-3 ml-4" style="color: black; background-color: #fed136">Volunteering</a></p>
                       {% else %}
-                      <p><a href="event-detail.html" class="btn btn-dark py-2 px-3 ml-4" style="color: #fed136">Volunteer</a></p>
+                      <p><a href="{% url 'volunteer_event' event.id %}" class="btn btn-dark py-2 px-3 ml-4" style="color: #fed136">Volunteer</a></p>
                       {% endif %}
                       <p><a href="" class="btn btn-dark py-2 px-3 ml-4" style="color: #fed136">Attend</a></p>  
                     </div>
